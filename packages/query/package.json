@@ -1,0 +1,19 @@
+{
+  "name": "@artoo-detoo/query",
+  "version": "1.0.0",
+  "author": "mauricewu <liheng.wu77@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.2"
+  }
+}
