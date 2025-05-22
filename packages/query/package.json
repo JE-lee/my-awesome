@@ -1,6 +1,6 @@
 {
   "name": "@artoo-detoo/query",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "mauricewu <liheng.wu77@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
