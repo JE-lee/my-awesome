@@ -29,5 +29,7 @@ export function serialize(obj: any) {
 }
 
 export function defaultResolver(...args: any[]) {
-  return args
+  return '_default_'
 }
+
+export const paramsResolver = serialize
