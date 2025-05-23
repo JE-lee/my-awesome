@@ -1,5 +1,11 @@
 # @artoo-detoo/query
 
+## 1.0.1
+
+### Patch Changes
+
+- fixed some export issues
+
 ## 1.1.0
 
 ### Minor Changes

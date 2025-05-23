@@ -1,13 +1,13 @@
-import type { Config } from 'jest';
+import { createDefaultPreset } from 'ts-jest'
 
-const config: Config = {
+const tsJestTransformCfg = createDefaultPreset().transform
+
+/** @type {import("jest").Config} **/
+export default {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  moduleFileExtensions: ['ts', 'js'],
   testMatch: ['**/*.test.ts'],
   transform: {
-    '^.+\.ts$': 'ts-jest',
+    ...tsJestTransformCfg,
   },
-};
-
-export default config;
+}

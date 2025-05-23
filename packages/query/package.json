@@ -1,16 +1,24 @@
 {
   "name": "@artoo-detoo/query",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "mauricewu <liheng.wu77@gmail.com>",
   "license": "MIT",
-  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "*.d.ts",
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
     "test": "jest"
   },
   "dependencies": {
